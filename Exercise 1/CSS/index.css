@@ -2,6 +2,12 @@
     margin: 0;
     padding: 0;
 }
+body{
+    margin:0;
+    background: #ddd;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+}
 
 .navBar{
     width: 100%;
@@ -28,25 +34,70 @@
     /* border: 1px solid white; */
 }
 .navBar ul li:hover {
-    background-color: blue ;
+    transform: scale(1.1);
+    cursor: pointer;
     color: white;
+    text-shadow: 1px -1px 4px #000000;
 }
 
 /* Styling Services Section */
 
 main{
+    padding-top: 10vh;
     width: 100vw;
-    height: 80vh;
-    border: 1px blue solid;
+    height: 70vh;
+    /* border: 1px blue solid; */
     display: flex;
     justify-content: space-around;
+}
+main h1{
+    color:rgb(61, 163, 204);
+
 }
 
 .services{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 30vw;
-    height: 90%;
+    width: 25vw;
+    height: 100%;
     justify-content: space-around;
+    align-items: center;
+    /* border: 2px orangered solid; */
+}
+
+services-pic{
+    height: 22vh;
+    width: 12vw;
+    border-radius: 50%;
+    border:5px skyblue solid;
+}
+services-pic img{
+    padding: 3vh 1vw;
+    margin: auto;
+    height: 15vh;
+    width: 10vw;
+    object-fit: contain;
+    /* vertical-align: middle; */
+    /* overflow: hidden; */
+}
+
+.services p{
+    text-align: center;
+    font-size: .85em;
+}
+
+.learn-more{
+    width: 16vw;
+    height: 8vh;
+    background: rgb(61, 163, 204);
+    border-radius: 8px;
+    color: white;
+    border: skyblue;
+}
+.learn-more:hover{
+    cursor: pointer;
+    background: rgb(50, 135, 168);
+    transform: scale(1.03);
+    font-weight: bold;
 }
