@@ -75,3 +75,22 @@ console.log("*******Displaying unique elements between 2 arrays*******");
 console.log(uniqueElements());
 
 /* Write a JavaScript program to list the properties of a JavaScript object? */
+
+console.log("********List the Properties of the object********");
+function listProperties() {
+  var student = {
+    name: "Himanshu Tripathi",
+    sclass: "X",
+    rollNo: "21",
+  };
+  console.log("object :", student);
+  //console.log(`object : ${student}`);  // not sure why using `` not displaying student object
+  let properties = [];
+  for (let prop in student) {
+    properties.push(prop);
+    console.log(`Properties of Students are : ${prop}`);
+  }
+  return properties;
+}
+
+console.log(`Properties of Students are : ${listProperties()}`);
