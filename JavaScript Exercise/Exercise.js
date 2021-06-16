@@ -31,3 +31,24 @@ ascendingSort();
 descendingSort();
 
 //* Write a JavaScript program to remove duplicate items from an array.
+
+let dupArray = ["Heman","Goku","Himanshu","Goku"];
+
+function removingDuplicates(){
+    return dupArray.filter((a,b)=> dupArray.indexOf(a)===b);
+}
+console.log(`************* Removing Duplicates using filter method *************`);
+console.log(removingDuplicates());
+
+/*Using Set */
+console.log(`************* Removing Duplicates using Set Data Structure *************`);
+console.log([...new Set(dupArray)]);
+
+/*Using forEach() and include()*/
+let uniqueArray =[];
+dupArray.forEach((c)=>{
+    if(!uniqueArray.includes(c))
+        uniqueArray.push(c);
+});
+console.log(`************* Removing Duplicates using forEach() and include() *************`);
+console.log(uniqueArray);
