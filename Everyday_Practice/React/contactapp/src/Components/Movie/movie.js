@@ -3,27 +3,29 @@ import React, { useEffect, useState } from "react";
 const Movie = () => {
   const [movie, setMovie] = useState({});
   const [movieName, setMovieName] = useState("");
-  useEffect(() => {
-    fetch("https://www.omdbapi.com/?t=The+Dark+Knight&apikey=d0291610")
-      .then((resp) => resp.json())
-      .then((movieApi) => {
-        console.log(movieApi);
-        setMovie(movieApi);
-      });
-  }, []);
+  const [movieNameClicked, setmovieNameClicked] = useState("Thor");
 
-  const getMovie = () => {
-    fetch(`https://www.omdbapi.com/?t=${movieName}&apikey=d0291610`)
+  useEffect(() => {
+    fetch(`https://www.omdbapi.com/?t=${movieNameClicked}&apikey=d0291610`)
       .then((resp) => resp.json())
       .then((movieApi) => {
         console.log(movieApi);
         setMovie(movieApi);
       });
-  };
+  }, [movieNameClicked]);
+
+  //   const getMovie = () => {
+  //     fetch(`https://www.omdbapi.com/?t=${movieName}&apikey=d0291610`)
+  //       .then((resp) => resp.json())
+  //       .then((movieApi) => {
+  //         console.log(movieApi);
+  //         setMovie(movieApi);
+  //       });
+  //   };
 
   return (
     <div className="container p-5">
-      <div className="input-group mb-3 col-md-4 offset-md-1">
+      <div className="input-group mb-1 col-md-4 offset-md-1">
         <input
           type="text"
           className="form-control"
@@ -34,7 +36,8 @@ const Movie = () => {
           className="btn btn-outline-secondary"
           type="button"
           id="button-addon2"
-          onClick={getMovie}
+          //onClick={getMovie}
+          onClick={() => setmovieNameClicked(movieName)}
         >
           SEARCH
         </button>
