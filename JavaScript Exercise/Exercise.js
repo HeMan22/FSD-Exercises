@@ -94,3 +94,24 @@ function listProperties() {
 }
 
 console.log(`Properties of Students are : ${listProperties()}`);
+
+/* Converting values of an object into array */
+
+console.log("********List the values of the key of object********");
+let values = [];
+function listValues() {
+  let obj = {
+    One: "1",
+    Two: "2",
+    Three: "3",
+    Four: "4",
+  };
+
+  for (let val in obj) {
+    values.push(obj[val]);
+  }
+  return values;
+}
+listValues();
+//console.log(`Object values:: ${values}`);
+console.log(values);
