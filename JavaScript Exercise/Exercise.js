@@ -115,3 +115,56 @@ function listValues() {
 listValues();
 //console.log(`Object values:: ${values}`);
 console.log(values);
+
+/**
+ * * Write a JavaScript function to sort the following array of objects by title value?
+
+	Sample object :
+	var library = [
+	{ author: 'Bill Gates', title: 'The Road Ahead', libraryID: 1254},
+	{ author: 'Steve Jobs', title: 'Walter Isaacson', libraryID: 4264},
+	{ author: 'Suzanne Collins', title: 'Mockingjay: The Final Book of The Hunger Games', libraryID: 3245}
+	];
+
+ */
+
+console.log(
+  `**************Sorting array of objects through values**************`
+);
+
+let library = [
+  { author: "Bill Gates", title: "The Road Ahead", libraryID: 1254 },
+  { author: "Steve Jobs", title: "Walter Isaacson", libraryID: 4264 },
+  {
+    author: "Suzanne Collins",
+    title: "Mockingjay: The Final Book of The Hunger Games",
+    libraryID: 3245,
+  },
+];
+function sortByTitle() {
+  let sorted = library.sort((a, b) => {
+    return a.title > b.title ? 1 : -1;
+  });
+  console.log(sorted);
+}
+sortByTitle();
+
+//Another Approach
+
+function compareTitle(a, b) {
+  // converting to uppercase to have case insensitive comparison
+  const title1 = a.title.toUpperCase();
+  const title2 = b.title.toUpperCase();
+
+  let compare = 0;
+
+  if (title1 > title2) {
+    compare = 1;
+  } else if (title1 < title2) {
+    compare = -1;
+  }
+
+  return compare;
+}
+console.log(`Another Approach of sorting array of objects through values`);
+console.log(library.sort(compareTitle));
