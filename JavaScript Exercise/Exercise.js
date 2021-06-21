@@ -168,3 +168,24 @@ function compareTitle(a, b) {
 }
 console.log(`Another Approach of sorting array of objects through values`);
 console.log(library.sort(compareTitle));
+
+/**
+ * Write a JavaScript function that accepts two arguments, 
+ * a string and a letter and the function will count the number of occurrences
+ *  of the specified letter within the string.
+Sample arguments : 'gmail.com', 'm'
+Expected output : 2
+ */
+console.log(
+  `***************************Occurrences of a letter***********************************`
+);
+
+(function findingOccurrence(word, letter) {
+  let occurrence = 0;
+  for (let alphabet in word) {
+    if (word[alphabet] === letter) {
+      occurrence++;
+    }
+  }
+  console.log(`'${letter}' in ${word} occured ${occurrence} times.`);
+})("himanshu", "h");
