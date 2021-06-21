@@ -9,6 +9,16 @@ console.log(`Largest number in an array:  ${largestNumber()}`);
 
 //  Write a JavaScript program to display the current day and time in the following format mm/dd/yyyy.
 
+(function getCurrentDateTimeFormate() {
+  let currentDateTimeStamp = new Date();
+  console.log(
+    `******************** Date in format mm/dd/yyyy ***********************`
+  );
+  console.log(
+    `${currentDateTimeStamp.getMonth()}/${currentDateTimeStamp.getDate()}/${currentDateTimeStamp.getFullYear()}`
+  );
+})();
+
 // Write a JavaScript program to sort array of strings in both ascending and descending order.
 let names = ["Heman", "Goku", "Ryu", "Gohan", "Kira"];
 
