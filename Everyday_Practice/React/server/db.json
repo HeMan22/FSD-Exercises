@@ -1,0 +1,18 @@
+{
+  "contacts": [{
+      "id": 1,
+      "name": "mike",
+      "email": "mike@test.com",
+      "phone": 9999911111,
+      "category": "colleague",
+      "imageUrl": "https://picsum.photos/100/100"
+    },
+	{
+      "id": 2,
+      "name": "Heman",
+      "email": "heman@test.com",
+      "phone": 9876543210,
+      "category": "friend",
+      "imageUrl": "https://picsum.photos/200/100"
+    }]
+}
