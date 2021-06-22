@@ -3,17 +3,20 @@ import React from "react";
 const contact = (props) => {
   const { id, name, email, phone, category, imageUrl } = props.contact;
   return (
-    <div className="card">
-      <img src="..." className="card-img-top" alt="..." />
+    <div className="card col-md-3 m-1">
+      <img src={imageUrl} className="card-img-top p-2" alt="..." />
       <div className="card-body">
-        <h5 className="card-title">Card title</h5>
-        <p className="card-text">
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </p>
-        <a href="#" className="btn btn-primary">
-          Go somewhere
-        </a>
+        <span className="badge bg-secondary rounded-pill float-end">
+          {category}
+        </span>
+        <h5 className="card-title">{name}</h5>
+        <p className="card-text">{email}</p>
+        <p className="card-text">{phone}</p>
+        <em className="fas fa-edit float-end text-secondary m-2"></em>
+        <em
+          className="fas fa-trash-alt float-end text-danger m-2"
+          onClick={() => props.deleteContactHandler(id)}
+        ></em>
       </div>
     </div>
   );

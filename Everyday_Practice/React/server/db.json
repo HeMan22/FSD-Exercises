@@ -1,18 +1,36 @@
 {
-  "contacts": [{
+  "contacts": [
+    {
       "id": 1,
-      "name": "mike",
+      "name": "Mike",
       "email": "mike@test.com",
       "phone": 9999911111,
-      "category": "colleague",
-      "imageUrl": "https://picsum.photos/100/100"
+      "category": "Office",
+      "imageUrl": "https://picsum.photos/200"
     },
-	{
+    {
       "id": 2,
       "name": "Heman",
       "email": "heman@test.com",
       "phone": 9876543210,
-      "category": "friend",
-      "imageUrl": "https://picsum.photos/200/100"
-    }]
+      "category": "Friends",
+      "imageUrl": "https://picsum.photos/100"
+    },
+    {
+      "id": "3",
+      "name": "Lucy",
+      "email": "lucy@test.com",
+      "phone": "9999955555",
+      "category": "Friends",
+      "imageUrl": "http://picsum.photos/200"
+    },
+    {
+      "id": "cf356747-d0b4-4b94-93a9-29bb7232cd25",
+      "name": "himanshu ",
+      "phone": "09458706580",
+      "email": "heman.tri2208@gmail.com",
+      "category": "Family",
+      "imageUrl": "http://picsum.photos/200"
+    }
+  ]
 }
