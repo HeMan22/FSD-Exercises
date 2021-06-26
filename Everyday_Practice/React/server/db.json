@@ -30,7 +30,23 @@
       "phone": "09458706580",
       "email": "heman.tri2208@gmail.com",
       "category": "Family",
+      "imageUrl": "http://picsum.photos/100"
+    },
+    {
+      "id": "0396cbef-aafa-4612-928b-3a8133d433c5",
+      "name": "himanshu tripathi",
+      "phone": "09458706580",
+      "email": "heman.tri2208@gmail.com",
+      "category": "Friends",
       "imageUrl": "http://picsum.photos/200"
+    },
+    {
+      "id": "46dd4d1d-3475-49bc-859b-db558298b5e8",
+      "name": "Meera Tripathi",
+      "phone": "08353936229",
+      "email": "",
+      "category": "Family",
+      "imageUrl": "http://picsum.photos/100"
     }
   ]
 }
