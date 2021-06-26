@@ -13,6 +13,9 @@ const contact = (props) => {
         <h5 className="card-title">{name}</h5>
         <p className="card-text">{email}</p>
         <p className="card-text">{phone}</p>
+
+        {/* Navigate to EditComponent with url parameter as 'id' */}
+
         <Link to={`/edit/${id}`}>
           <em className="fas fa-edit float-end text-secondary m-2"></em>
         </Link>

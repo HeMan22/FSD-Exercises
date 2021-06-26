@@ -1,43 +1,43 @@
 {
   "contacts": [
     {
-      "id": 1,
       "name": "Mike",
+      "category": "Friends",
+      "id": 1,
       "email": "mike@test.com",
       "phone": 9999911111,
-      "category": "Office",
       "imageUrl": "https://picsum.photos/200"
     },
     {
+      "name": "heman",
+      "category": "Office",
       "id": 2,
-      "name": "Heman",
       "email": "heman@test.com",
-      "phone": 9876543210,
-      "category": "Friends",
+      "phone": "9876543210",
       "imageUrl": "https://picsum.photos/100"
     },
     {
-      "id": "3",
       "name": "Lucy",
+      "category": "Office",
+      "id": "3",
       "email": "lucy@test.com",
       "phone": "9999955555",
-      "category": "Friends",
       "imageUrl": "http://picsum.photos/200"
     },
     {
+      "name": "Himanshu Tripathi",
+      "category": "Family",
       "id": "cf356747-d0b4-4b94-93a9-29bb7232cd25",
-      "name": "himanshu ",
       "phone": "09458706580",
       "email": "heman.tri2208@gmail.com",
-      "category": "Family",
       "imageUrl": "http://picsum.photos/100"
     },
     {
+      "name": "Prachi Tripathi",
+      "category": "Family",
       "id": "0396cbef-aafa-4612-928b-3a8133d433c5",
-      "name": "himanshu tripathi",
       "phone": "09458706580",
-      "email": "heman.tri2208@gmail.com",
-      "category": "Friends",
+      "email": "prashirocks07@gmail.com",
       "imageUrl": "http://picsum.photos/200"
     },
     {
